@@ -163,6 +163,7 @@ export default function About() {
                                 size="s"
                                 weight="default"
                                 variant="secondary"
+                                {...(item.download && { download: item.download })}
                             />
                             <IconButton
                                 className="s-flex-show"
@@ -171,6 +172,7 @@ export default function About() {
                                 href={item.link}
                                 icon={item.icon}
                                 variant="secondary"
+                                {...(item.download && { download: item.download })}
                             />
                         </React.Fragment>
                     ),
